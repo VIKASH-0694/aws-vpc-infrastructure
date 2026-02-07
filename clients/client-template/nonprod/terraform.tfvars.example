@@ -1,0 +1,44 @@
+# Non-Production VPC Configuration (Dev/Staging)
+environment  = "staging"
+project_name = "myapp"
+cost_center  = "engineering"
+owner        = "dev-team"
+aws_region   = "us-east-1"
+
+# VPC Configuration
+vpc_cidr             = "10.1.0.0/16" # Different CIDR from prod
+enable_dns_hostnames = true
+enable_dns_support   = true
+
+# Subnet Configuration
+web_subnet_cidrs = ["10.1.1.0/24", "10.1.2.0/24"]
+app_subnet_cidrs = ["10.1.11.0/24", "10.1.12.0/24"]
+db_subnet_cidrs  = ["10.1.21.0/24", "10.1.22.0/24"]
+
+# Availability Zones (leave empty to use all available)
+availability_zones = []
+
+# Public Subnet Settings
+map_public_ip_on_launch = true
+
+# Cost Optimized - Single NAT Gateway
+enable_nat_gateway = true
+single_nat_gateway = true # Save ~$32/month
+
+# VPC Endpoints (Cost Optimization)
+enable_s3_endpoint       = true
+enable_dynamodb_endpoint = true
+
+# Monitoring
+enable_vpc_flow_logs     = true
+flow_logs_retention_days = 7 # Shorter retention for cost savings
+
+# Monitoring
+enable_cloudwatch_alarms        = true
+nat_gateway_bandwidth_threshold = 5000000000   # 5GB
+s3_data_transfer_threshold      = 100000000000 # 100GB
+
+# Additional Tags
+additional_tags = {
+  AutoShutdown = "enabled"
+}

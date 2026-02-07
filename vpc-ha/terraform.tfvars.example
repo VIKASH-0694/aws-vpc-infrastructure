@@ -1,0 +1,28 @@
+# Example configuration for different environments
+
+# Production Configuration
+# environment          = "production"
+# project_name         = "myapp"
+# cost_center          = "engineering"
+# owner                = "platform-team"
+# enable_nat_gateway   = true
+# single_nat_gateway   = false  # HA setup
+# enable_vpc_flow_logs = true
+
+# Staging Configuration (Cost Optimized)
+# environment          = "staging"
+# project_name         = "myapp"
+# cost_center          = "engineering"
+# owner                = "platform-team"
+# enable_nat_gateway   = true
+# single_nat_gateway   = true   # Save ~$32/month
+# enable_vpc_flow_logs = true
+
+# Development Configuration (Maximum Cost Savings)
+# environment          = "development"
+# project_name         = "myapp"
+# cost_center          = "engineering"
+# owner                = "dev-team"
+# enable_nat_gateway   = false  # Save ~$64/month
+# single_nat_gateway   = false
+# enable_vpc_flow_logs = false

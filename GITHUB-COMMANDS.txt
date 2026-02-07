@@ -1,0 +1,35 @@
+# GitHub Setup Commands
+
+# Step 1: Initialize and commit
+git init
+git add .
+git commit -m "Initial commit: Production-grade AWS VPC Infrastructure v1.0.0"
+
+# Step 2: Create repository on GitHub
+# Go to: https://github.com/new
+# Repository name: aws-vpc-infrastructure
+# Description: Production-grade AWS VPC infrastructure with Terraform - Multi-client support, FinOps optimization, and automated deployment
+# Public or Private
+# DO NOT initialize with README
+
+# Step 3: Connect to GitHub (replace YOUR-USERNAME)
+git remote add origin https://github.com/YOUR-USERNAME/aws-vpc-infrastructure.git
+git branch -M main
+git push -u origin main
+
+# Step 4: Create first release
+# Go to: https://github.com/YOUR-USERNAME/aws-vpc-infrastructure/releases/new
+# Tag: v1.0.0
+# Title: v1.0.0 - Initial Release
+# Copy description from GITHUB-SETUP.md
+
+# Step 5: Add topics
+# Go to repository settings
+# Add topics: terraform, aws, vpc, infrastructure-as-code, devops, finops, cloud-infrastructure, aws-networking, multi-tenant, cost-optimization
+
+# Step 6: Post on LinkedIn
+# Use templates from LINKEDIN-POST.md
+# Choose the version that fits your audience
+# Post during business hours for maximum engagement
+
+# Done! Your project is now on GitHub and ready to share!

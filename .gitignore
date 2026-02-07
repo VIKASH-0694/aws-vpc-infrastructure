@@ -1,0 +1,56 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+.terraform/
+.terraform.lock.hcl
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan files
+*.plan
+
+# Sensitive files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+
+# Client-specific data (keep template only)
+clients/*/
+!clients/client-template/
+!clients/README.md
+
+# State backups
+state-backup-*.tfstate
+
+# Local environment files
+.env
+.env.local
