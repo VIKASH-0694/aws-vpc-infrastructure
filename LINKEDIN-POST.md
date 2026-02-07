@@ -68,7 +68,7 @@ A comprehensive Terraform-based infrastructure-as-code solution for deploying en
 • Anyone building on AWS
 
 **🔗 Check it out:**
-GitHub: [Your GitHub URL]
+GitHub: https://github.com/vikash-0694/aws-vpc-infrastructure
 
 **💡 Why I Built This:**
 After deploying VPCs for multiple clients, I noticed the same patterns and challenges. I wanted to create a solution that:
